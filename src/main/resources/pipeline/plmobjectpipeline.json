@@ -1,0 +1,28 @@
+{
+  "description": "demo for applicationData",
+  "processors": [
+    {
+      "foreach": {
+        "field": "applicationDataEs",
+        "processor ": {
+          "attachment": {
+            "target_field": "_ingest._value.file_detail",
+            "field": "_ingest._value.data ",
+            "indexed_chars": -1,
+            "ignore_missing ": true
+          }
+        }
+      }
+    },
+    {
+      "foreach": {
+        "field": "applicationDataEs",
+        " processor": {
+          " remove": {
+            "field": " _ingest._value.data"
+          }
+        }
+      }
+    }
+  ]
+}
