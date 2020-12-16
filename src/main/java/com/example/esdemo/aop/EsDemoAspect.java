@@ -1,7 +1,7 @@
 package com.example.esdemo.aop;
 
-import com.example.constant.FullTextSearchConstant;
 import com.example.esdemo.annotation.DealEsIndex;
+import com.example.esdemo.constant.FullTextSearchConstant;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;

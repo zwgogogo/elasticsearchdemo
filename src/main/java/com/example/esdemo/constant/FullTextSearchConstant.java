@@ -1,4 +1,4 @@
-package com.example.constant;
+package com.example.esdemo.constant;
 
 public class FullTextSearchConstant {
 
