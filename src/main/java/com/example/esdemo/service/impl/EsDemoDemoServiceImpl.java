@@ -168,7 +168,7 @@ public class EsDemoDemoServiceImpl implements EsDemoService {
             e.printStackTrace();
         }
         String docSql = null;
-        try (Connection con = DriverManager.getConnection("jdbc:onacle:thin:[192.168.10.113:1521:ane.l", "username", "password");
+        try (Connection con = DriverManager.getConnection("url", "username", "password");
              PreparedStatement ps = con.prepareStatement(docSql, ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
              ResultSet rs = ps.executeQuery()
         ) {
